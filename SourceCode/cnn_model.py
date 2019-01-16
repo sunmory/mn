@@ -7,6 +7,7 @@ import numpy as np
 import pandas as pd
 import tensorflow as tf
 from sklearn.model_selection import KFold
+tf.enable_eager_execution()
 
 
 params = {

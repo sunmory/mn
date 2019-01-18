@@ -7,9 +7,13 @@ import numpy as np
 import pandas as pd
 import tensorflow as tf
 from sklearn.model_selection import KFold
+<<<<<<< HEAD
 from sklearn.metrics import mean_squared_error
 from multiprocessing import Pool
 from multiprocessing import cpu_count
+=======
+tf.enable_eager_execution()
+>>>>>>> d91842f39f30e7df73e9503f9e379835e66cd362
 
 tf.enable_eager_execution()
 

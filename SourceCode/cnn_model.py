@@ -7,14 +7,9 @@ import numpy as np
 import pandas as pd
 import tensorflow as tf
 from sklearn.model_selection import KFold
-<<<<<<< HEAD
 from sklearn.metrics import mean_squared_error
 from multiprocessing import Pool
 from multiprocessing import cpu_count
-=======
-tf.enable_eager_execution()
->>>>>>> d91842f39f30e7df73e9503f9e379835e66cd362
-
 tf.enable_eager_execution()
 
 params = {
@@ -28,7 +23,7 @@ params = {
 
 class CnnModel(tf.keras.Model):
     def __init__(self, params, feature_num, layer_num=3):
-        super().__init__()
+        super(CnnModel, self).__init__()
         self.params = params
         self.feature_num = feature_num
         self.layer_num = layer_num
